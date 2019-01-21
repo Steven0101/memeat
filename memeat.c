@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
         {
             case 'm':
                 inNum = strtoull(optarg, NULL, 10);
-                if (inNum >= BOUNDARY_THRESHOLD)
+                if (inNum > BOUNDARY_THRESHOLD)
                 {
                     printf("Not allowed to eat the memory exceed %d", BOUNDARY_THRESHOLD);
                     usage();
